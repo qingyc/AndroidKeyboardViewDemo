@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <!--keyboard_preview 显示区占位-->
+<!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>-->
+
+    <com.example.ableqing.androidkeyboardviewdemo.keyboard.MyKeyboardView
+
+        android:id="@+id/keyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ECECEC"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/btn_keyboard_key"
+        android:keyPreviewHeight="100dp"
+        android:keyPreviewLayout="@layout/keyboard_preview"
+        android:keyPreviewOffset="50dp"
+        android:keyTextColor="#4F4F4F"
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="0.0"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</android.support.v7.widget.LinearLayoutCompat>
